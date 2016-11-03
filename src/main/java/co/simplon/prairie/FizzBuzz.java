@@ -12,7 +12,7 @@ public class FizzBuzz {
     /**
      * Constructeur
      */
-    public void FizzBuzz() {
+    public FizzBuzz() {
     }
 
     /**
@@ -24,17 +24,29 @@ public class FizzBuzz {
      */
     public void afficherListeEntiers(int debut, int fin) {
         // TODO code à définir
+
+    	  int a;
+    	  for (a = debut; a <= fin; a++)
+    	  {
+    	   System.out.println(determinerCorrespondance(a));
+    	  }
+    
     }
 
     protected String determinerCorrespondance(int entier) {
-        if (entier == 0) 
+    	
+    	if (entier == 0) 
             return "0";
+    	if ((entier % 5 == 0) && (entier % 3 == 0))
+        	return "FizzBuzz";
         if (entier % 3 == 0) 
             return "Fizz" ;
         if (entier % 5 == 0)
             return "Buzz" ;
- 
+        
+        
         return Integer.toString (entier) ;
     }
 }
+    
  

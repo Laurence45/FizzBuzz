@@ -59,11 +59,11 @@ public class FizzBuzzTest {
     }
     
     @Test
-    public void la_correspondance_de_15_est_Fizz() {
+    public void la_correspondance_de_15_est_FizzBuzz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
-               "La correspondance pour 15 doit être Fizz.",
-               "Fizz",
+               "La correspondance pour 15 doit être FizzBuzz.",
+               "FizzBuzz",
                fizzBuzz.determinerCorrespondance(15)
        );
     }
